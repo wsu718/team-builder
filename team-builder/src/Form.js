@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import './Form.css'
+
 
 const Form = props => {
-    console.log(props);
+    
     const [teamMember, setTeamMember] = useState({ 
         name: "",
         email: "",
@@ -10,7 +12,6 @@ const Form = props => {
 
 
     const handleChanges = event => {
-        console.log(teamMember)
         setTeamMember({ ...teamMember, [event.target.name]: event.target.value });
     };
 

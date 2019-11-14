@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ReactDOM from "react-dom";
 import TeamList from './TeamList'
 import Form from './Form'
 
@@ -18,8 +16,6 @@ function App() {
       role: 'frontend engineer'
     },
   ]);
-
-  console.log(teamList);
 
   const addNewTeamMember = teamMember => {
     const newTeamMember = {
